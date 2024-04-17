@@ -1,0 +1,6 @@
+python-telegram-bot
+
+#create a file "token_username.py" and copy
+#from typing import Final
+#TOKEN: Final = "YOUR TOKEN"
+#BOT_USERNAME: Final = 'BOT USERNAME'
