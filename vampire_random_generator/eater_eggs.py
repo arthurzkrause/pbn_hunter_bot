@@ -1,5 +1,6 @@
 controle_updates = (
      "16/04/24: Add: Drive, Creed, Perks, Edges, Character Generator",
+     "18/05/24: Add: Health and Willpower. Minor Fix.",
 
 )
 

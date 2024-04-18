@@ -2,7 +2,7 @@ skills_all = {
     'Athletics': 0,
     'Brawl': 0,
     'Craft': 0,
-    'Drive': 0,
+    'Driving': 0,
     'Firearms': 0,
     'Larceny': 0,
     'Meleee': 0,

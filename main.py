@@ -67,7 +67,15 @@ async def character_generator(update: Update, context: ContextTypes.DEFAULT_TYPE
                 result += f"{attribute}: {assigned_value}\n"
             else:
                 result += f"{attribute}: No options available\n"
+        
+        # HEALTH_TRACK
+        health = attributes_all['Stamina'] + 3
+        result += f'\nHealth: {health}\n'
 
+        # WILLPOWER
+        willpower = attributes_all['Composure'] + attributes_all['Resolve']
+        result += f'Willpower: {willpower}\n'
+        
         return result
 
     # SKILLS GENERATOR - usa quase tudo que tá em vampir_random_generator.other_stats
@@ -84,9 +92,8 @@ async def character_generator(update: Update, context: ContextTypes.DEFAULT_TYPE
                 result += f"{atributo}: {assigned_value}\n"
             else:
                 result += f"{atributo}: No options available\n"
-        
         return result
-
+    
     # Choose the desired category
     chosen_category = random.choice(list(available_skill_value.keys()))
     creed_choice = random.choice(["Entrepreneurial", "Faithful", "Inquisitive", "Martial", "Underground"])
